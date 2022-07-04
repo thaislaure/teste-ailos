@@ -1,6 +1,10 @@
 .head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
   .info{
-    padding: 30px;
+
     .title{
 
       font-family: sans-serif;
@@ -14,6 +18,9 @@
       font-size: 12px;
       font-weight: 400;
       color: #787878;
+    }
+    .client{
+
     }
   }
 }
