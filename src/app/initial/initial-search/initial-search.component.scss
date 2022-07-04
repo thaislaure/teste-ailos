@@ -1,0 +1,134 @@
+.page {
+  padding-left: 25px;
+  margin: 0;
+  background: #e7eef1;
+  min-height: 700px;
+
+  .title {
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #101213;
+  }
+}
+
+.description {
+  padding-top: 5px;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #4f575e;
+}
+
+.consult {
+  padding-top: 15px;
+  .field {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 14px;
+  }
+
+  input {
+    border-radius: 2px;
+    border: 1px solid #889499;
+    height: 32px;
+    width: 270px;
+    padding: 0;
+  }
+
+  button {
+    border: 0;
+    margin-left: 15px;
+    background-color: #165c7d;
+    height: 32px;
+    width: 170px;
+    color: #fff;
+  }
+}
+
+.cardCad {
+  margin-top: 30px;
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin-right: 30px;
+  float: left;
+  .cardTitle {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #204657;
+    padding-bottom: 3px;
+  }
+  .cardSubTitle {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #787878;
+  }
+
+  .info {
+    padding-top: 20px;
+    .icon {
+      float: left;
+      padding-right: 20px;
+    }
+    .details {
+      float: left;
+      .detailsTitle {
+        font-family: sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        color: #787878;
+        padding-bottom: 3px;
+      }
+      .value {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #040f14;
+      }
+    }
+    .account {
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #165c7d;
+    }
+  }
+}
+
+.rodape {
+  padding-top: 30px;
+  button {
+    border: 1px solid #165c7d;
+    margin-left: 15px;
+    height: 45px;
+    width: 270px;
+    color: #165c7d;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   font-family: "Titillium Web", sans serif;
+//   color: #758d96;
+// }
