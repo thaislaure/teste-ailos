@@ -1,39 +1,47 @@
-.head{
+.head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-      padding: 30px;
-  .info{
-
-    .title{
-
+  padding: 30px;
+  .info {
+    .title {
       font-family: sans-serif;
       font-size: 24px;
       font-weight: 700;
       color: #101213;
     }
-    .nav{
+    .nav {
       padding-top: 4px;
       font-family: sans-serif;
       font-size: 12px;
       font-weight: 400;
       color: #787878;
     }
-
   }
-  .client{
-
-    button {
-      border: 1px solid #165c7d;
+  .icons {
+    display: flex;
+    justify-content: end;
+    .notification{
+      padding-top: 5px;
+      padding-right: 5px;
+    }
+    .client {
+      padding-top: 5px;
+      button {
+        border: 1px solid #165c7d;
+        margin-left: 15px;
+        height: 30px;
+        width: 100px;
+        color: #165c7d;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: sans-serif;
+        border-radius: 15px;
+      }
+    }
+    .profile{
       margin-left: 15px;
-      height: 30px;
-      width: 100px;
-      color: #165c7d;
-      background-color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      font-family: sans-serif;
-      border-radius: 15px;
     }
   }
 }

@@ -1,10 +1,9 @@
-:root {
-  --primary-color: #e7eef1;
-}
+
 
 .page {
-   background: var(--primary-color);
+  background: var(--background-color);
   padding-left: 25px;
+  padding-bottom: 40px;
   margin: 0;
   .title {
     padding-top: 30px;
@@ -82,6 +81,7 @@
   .info {
     padding-top: 20px;
     .icon {
+      padding-top: 10px;
       float: left;
       padding-right: 20px;
     }

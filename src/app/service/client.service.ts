@@ -12,7 +12,7 @@ import { Client } from "../model/client";
   providedIn: "root",
 })
 export class ClientService {
-  url = "http://localhost:3000/clients"; // api rest fake
+  url = "http://localhost:3000/clientes"; // api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) {}
@@ -29,14 +29,8 @@ export class ClientService {
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  // Obtem um carro pelo id
-  getById(id: number): Observable<Client> {
-    return this.httpClient
-      .get<Client>(this.url + "/" + id)
-      .pipe(retry(2), catchError(this.handleError));
-  }
 
-  buscaPorCodigo(codigo: number) {
+  getById(codigo: number) {
     return this.httpClient.get(`${this.url}/${codigo}`)
       .toPromise()
       .then(response => {
