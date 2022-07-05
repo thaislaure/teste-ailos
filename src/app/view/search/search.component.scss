@@ -1,9 +1,11 @@
+:root {
+  --primary-color: #e7eef1;
+}
+
 .page {
+   background: var(--primary-color);
   padding-left: 25px;
   margin: 0;
-  background: #e7eef1;
-  min-height: 700px;
-
   .title {
     padding-top: 30px;
     font-family: sans-serif;
@@ -105,21 +107,6 @@
       font-weight: 400;
       color: #165c7d;
     }
-  }
-}
-
-.rodape {
-  padding-top: 30px;
-  button {
-    border: 1px solid #165c7d;
-    margin-left: 15px;
-    height: 45px;
-    width: 270px;
-    color: #165c7d;
-    background-color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: sans-serif;
   }
 }
 

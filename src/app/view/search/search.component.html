@@ -1,8 +1,5 @@
-<app-head></app-head>
+
 <div class="page">
-
-<app-time-line></app-time-line>
-
   <div class="title">Informe o CPF do futuro cooperado (a)</div>
 
   <div class="description">
@@ -14,7 +11,7 @@
   <div class="consult">
     <div class="field">CPF</div>
     <input />
-    <button>Consulta por CPF</button>
+    <button (click)="getClients()">Consulta por CPF</button>
   </div>
 
   <div class="cards" >
@@ -77,6 +74,4 @@
   </div>
 </div>
 </div>
-<div class="rodape">
-  <button>Dicas para abertura de conta</button>
-</div>
+

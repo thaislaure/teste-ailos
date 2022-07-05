@@ -1,0 +1,95 @@
+{
+  "clientes": [
+    {
+      "nome": "Valquiria Fernandes dos Santos Palmeira",
+      "cpf": "05650090602",
+      "id": 1,
+      "situacao": "Regular",
+      "contas": [
+        {
+          "tipo": "Conta Aplicação",
+          "banco": "Cooperativa Viacred",
+          "numero": "557932-4"
+        },
+        {
+          "tipo": "Conta Corrente",
+          "banco": "Cooperativa Viacred",
+          "numero": "778461-8"
+        }
+      ]
+    },
+    {
+      "nome": "Marta Siqueira Neves",
+      "cpf": "06601775606",
+      "id": 2,
+      "situacao": "Regular",
+      "contas": [
+        {
+          "tipo": "Conta Aplicação",
+          "banco": "Cooperativa Viacred",
+          "numero": "557932-4"
+        },
+        {
+          "tipo": "Conta Corrente",
+          "banco": "Cooperativa Viacred",
+          "numero": "778461-8"
+        }
+      ]
+
+    },
+    {
+      "nome": "Guilherme Antônio Maia",
+      "cpf": "06682523670",
+      "id": 3,
+      "situacao": "Regular",
+      "contas": [
+        {
+          "tipo": "Conta Aplicação",
+          "banco": "Cooperativa Viacred",
+          "numero": "557932-4"
+        },
+        {
+          "tipo": "Conta Corrente",
+          "banco": "Cooperativa Viacred",
+          "numero": "778461-8"
+        }
+      ]
+    },
+    {
+      "nome": "Adriene Moreira Vitor Lelis",
+      "cpf": "08588675676 ",
+      "id": 4,
+      "situacao": "Regular",
+      "contas": [
+        {
+          "tipo": "Conta Aplicação",
+          "banco": "Cooperativa Viacred",
+          "numero": "557932-4"
+        },
+        {
+          "tipo": "Conta Corrente",
+          "banco": "Cooperativa Viacred",
+          "numero": "778461-8"
+        }
+      ]
+    },
+    {
+      "nome": "Jane Luciana da Silva",
+      "cpf": "14868380656",
+      "id": 5,
+      "situacao": "Regular",
+      "contas": [
+        {
+          "tipo": "Conta Aplicação",
+          "banco": "Cooperativa Viacred",
+          "numero": "557932-4"
+        },
+        {
+          "tipo": "Conta Corrente",
+          "banco": "Cooperativa Viacred",
+          "numero": "778461-8"
+        }
+      ]
+    }
+  ]
+}

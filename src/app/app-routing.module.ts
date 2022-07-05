@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InitialSearchComponent } from './initial-search/initial-search.component';
-
-
+import { SearchComponent } from './view/search/search.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: InitialSearchComponent
+    component: SearchComponent
   },
 ];
 

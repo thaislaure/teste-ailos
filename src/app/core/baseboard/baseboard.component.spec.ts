@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InitialSearchComponent } from './initial-search.component';
+import { BaseboardComponent } from './baseboard.component';
 
-describe('InitialSearchComponent', () => {
-  let component: InitialSearchComponent;
-  let fixture: ComponentFixture<InitialSearchComponent>;
+describe('BaseboardComponent', () => {
+  let component: BaseboardComponent;
+  let fixture: ComponentFixture<BaseboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InitialSearchComponent ]
+      declarations: [ BaseboardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InitialSearchComponent);
+    fixture = TestBed.createComponent(BaseboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
