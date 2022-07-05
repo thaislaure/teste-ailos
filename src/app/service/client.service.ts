@@ -23,10 +23,16 @@ export class ClientService {
   };
 
   // Obtem todos os carros
-  get(): Observable<Client[]> {
-    return this.httpClient
-      .get<Client[]>(this.url)
-      .pipe(retry(2), catchError(this.handleError));
+  get(): Promise<Client[]> {
+    return this.httpClient.get(`${this.url}`)
+    .toPromise()
+    .then(response => {
+      const client = response as Client[];
+      return client;
+    });
+    // return this.httpClient
+    //   .get<Client[]>(this.url)
+    //   .pipe(retry(2), catchError(this.handleError));
   }
 
 
