@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px;
+      padding: 30px;
   .info{
 
     .title{
@@ -19,8 +19,21 @@
       font-weight: 400;
       color: #787878;
     }
-    .client{
 
+  }
+  .client{
+
+    button {
+      border: 1px solid #165c7d;
+      margin-left: 15px;
+      height: 30px;
+      width: 100px;
+      color: #165c7d;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: sans-serif;
+      border-radius: 15px;
     }
   }
 }
