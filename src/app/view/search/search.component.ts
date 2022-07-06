@@ -7,7 +7,7 @@ import {
 } from "@angular/forms";
 import { Client } from "src/app/model/client";
 import { ClientService } from "src/app/service/client.service";
-import { CpfValidator } from "src/app/util/validator/cpf-validator";
+import { ValidadorCPF } from "src/app/util/validator/cpf-validator";
 
 @Component({
   selector: "app-search",
@@ -17,7 +17,6 @@ import { CpfValidator } from "src/app/util/validator/cpf-validator";
 export class SearchComponent implements OnInit {
   client: Client;
   infoForm: FormGroup;
-  mask: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -30,14 +29,15 @@ export class SearchComponent implements OnInit {
 
   private contruirFomrulario() {
     this.infoForm = this.formBuilder.group({
-      cpf: [null, [Validators.required, CpfValidator.validate]],
+      cpf: [null, [Validators.required, ValidadorCPF.validate]],
     });
   }
 
   public getClient() {
     if (this.infoForm.valid) {
+      this.cpf?.value.replace(".", "").replace("-", "");
       this.clientService.buscaPorCpf(this.cpf?.value).subscribe((client) => {
-        this.client = client;
+        this.client = client[0];
       });
     }
   }
@@ -49,9 +49,5 @@ export class SearchComponent implements OnInit {
 
   get cpf(): AbstractControl | null {
     return this.infoForm.get("cpf");
-  }
-
-  cpfmask() {
-    this.mask = "00.000.0000-00";
   }
 }

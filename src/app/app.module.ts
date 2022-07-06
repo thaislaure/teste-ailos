@@ -6,19 +6,18 @@ import { AppComponent } from "./app.component";
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
 import { NgxMaskModule } from "ngx-mask";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     CoreModule,
     SharedModule,
     CommonModule,
-
-    ReactiveFormsModule,
     NgxMaskModule.forRoot()
   ],
   declarations: [AppComponent],

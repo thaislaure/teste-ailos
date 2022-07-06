@@ -24,12 +24,12 @@ export class ClientService {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
   };
 
-
-  buscaPorCpf(cpf: string): Observable<Client> {
+// O correto seria retornar um objeto apenas, mas devido o json server retornar um array, deixei recebendo um array
+  buscaPorCpf(cpf: string): Observable<[Client]> {
     let params = new HttpParams();
     params = params.set('cpf', cpf);
     return this.httpClient
-      .get<Client>(this.url, { params })
+      .get<[Client]>(this.url, { params })
       .pipe(catchError(this.handleError));
   }
 
