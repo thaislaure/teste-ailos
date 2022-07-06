@@ -3,46 +3,34 @@ import {
   HttpClient,
   HttpErrorResponse,
   HttpHeaders,
+  HttpParams,
 } from "@angular/common/http";
 import { Observable, throwError } from "rxjs";
-import { retry, catchError } from "rxjs/operators";
+import { catchError } from "rxjs/operators";
 import { Client } from "../model/client";
+import { environment } from "src/environments/environment";
 
 @Injectable({
   providedIn: "root",
 })
 export class ClientService {
-  url = "http://localhost:3000/clientes"; // api rest fake
 
-  // injetando o HttpClient
-  constructor(private httpClient: HttpClient) {}
+  url = `${environment.baseUrl}/clientes`; // api rest fake
+
+  constructor(private httpClient: HttpClient) { }
 
   // Headers
   httpOptions = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
   };
 
-  // Obtem todos os carros
-  get(): Promise<Client[]> {
-    return this.httpClient.get(`${this.url}`)
-    .toPromise()
-    .then(response => {
-      const client = response as Client[];
-      return client;
-    });
-    // return this.httpClient
-    //   .get<Client[]>(this.url)
-    //   .pipe(retry(2), catchError(this.handleError));
-  }
 
-
-  getById(codigo: number) {
-    return this.httpClient.get(`${this.url}/${codigo}`)
-      .toPromise()
-      .then(response => {
-        const client = response as Client;
-        return client;
-      });
+  buscaPorCpf(cpf: string): Observable<Client> {
+    let params = new HttpParams();
+    params = params.set('cpf', cpf);
+    return this.httpClient
+      .get<Client>(this.url, { params })
+      .pipe(catchError(this.handleError));
   }
 
   // Manipulação de erros
