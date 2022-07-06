@@ -15,6 +15,12 @@ npm install
 
 Utilizei o JSON Server serve para simular uma api fake.
 
+Instalando com npm:
+
+```
+npm i json-server
+```
+
 Execute o comando abaixo na pasta raiz do seu projeto:
 
 ```
@@ -37,10 +43,10 @@ Abra o *browser* e acesse a url http://localhost:4200. Pronto!
 
 Alguns pontos a ser desenvolvidos futuramente:
 
-componet de button
+-componente de button
 
-componet d ecards
+-componente d ecards
 
-responsibilidade ficou alguns pontos que faltou ser responsivel
+-responsibilidade: ficou alguns pontos que faltou ser responsivel
 
-time-line - faltou terminar o component, fiz apenas o html e css
+-time-line: faltou terminar o component, fiz apenas o html e css
