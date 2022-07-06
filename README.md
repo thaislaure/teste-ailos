@@ -38,6 +38,9 @@ Abra o *browser* e acesse a url http://localhost:4200. Pronto!
 Alguns pontos a ser desenvolvidos futuramente:
 
 componet de button
+
 componet d ecards
+
 responsibilidade ficou alguns pontos que faltou ser responsivel
+
 time-line - faltou terminar o component, fiz apenas o html e css
