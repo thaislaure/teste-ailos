@@ -1,6 +1,6 @@
 # teste-ailos
 
-Para execução do projeto siga os passos abeixos
+Para execução do projeto siga os passos abaixo:
 
 #### Passo 1.1 - Instalando as dependências
 
@@ -32,7 +32,9 @@ ng serve
 
 Abra o *browser* e acesse a url http://localhost:4200. Pronto!
 
-todo list:
+
+### Todo list:
+
 Alguns pontos a ser desenvolvidos futuramente:
 
 componet de button
