@@ -1,4 +1,21 @@
-# teste-ailos
+<h1 align="center" >
+  Teste Ailos
+</h1>
+
+## <p id='tecnologies'>💻 Tecnologias </p>
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+-  [Angular v9.0.7](https://angular.io/)
+-  [TypeScript v3.7.5](https://www.typescriptlang.org/)
+-  [Node.js v12.11.1](https://nodejs.org/en/)
+
+
+## <p id='como'>💻 Como usar </p>
+Para clonar e executar este aplicativo, na linha de comando:
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/thaislaure/teste-ailos.git
 
 Para execução do projeto siga os passos abaixo:
 
