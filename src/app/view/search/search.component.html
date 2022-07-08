@@ -7,8 +7,8 @@
     traços).
   </div>
   <form autocomplete="off" [formGroup]="infoForm" (ngSubmit)="getClient()">
+    <div class="field">CPF</div>
     <div class="consult">
-      <div class="field">CPF</div>
       <input mask="000.000.000-00" id="cpf" name="cpf" formControlName="cpf" />
       <button type="submit">Consulta por CPF</button>
     </div>
