@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+   justify-content: center;
   width: 100%;
+  padding-right: 40px
 }
 ul {
   margin: 0;
@@ -16,7 +17,7 @@ ul {
   // transition: all 200ms ease-in;
 
   .status {
-    padding: 0px 40px;
+    padding: 0px 10px;
     display: flex;
     justify-content: center;
     border-top: 2px solid #d6dce0;

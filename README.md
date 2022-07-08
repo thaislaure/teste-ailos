@@ -62,8 +62,6 @@ Alguns pontos a ser desenvolvidos futuramente:
 
 -componente de button
 
--componente d ecards
-
--responsibilidade: ficou alguns pontos que faltou ser responsivel
+-componente de cards
 
 -time-line: faltou terminar o component, fiz apenas o html e css
