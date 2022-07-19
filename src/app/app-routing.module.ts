@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', loadChildren: './view/search/search.module#SearchModule'},
+ //   loadChildren: () => import('./view/search/search.module').then(m => m.SearchModule)
+  { path: 'home', loadChildren: () => import('./view/search/search.module').then(m => m.SearchModule)},
 ];
 
 @NgModule({
