@@ -6,9 +6,7 @@ import { AppComponent } from "./app.component";
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
 import { NgxMaskModule } from "ngx-mask";
-import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
-
 
 @NgModule({
   imports: [
@@ -17,7 +15,6 @@ import { HttpClientModule } from "@angular/common/http";
     HttpClientModule,
     CoreModule,
     SharedModule,
-    CommonModule,
     NgxMaskModule.forRoot()
   ],
   declarations: [AppComponent],

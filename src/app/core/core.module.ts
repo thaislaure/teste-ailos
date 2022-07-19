@@ -8,6 +8,11 @@ import { BaseboardComponent } from "./baseboard/baseboard.component";
     HeadComponent,
     MenuComponent,
     BaseboardComponent,
+  ],
+  exports: [
+    MenuComponent,
+    HeadComponent,
+    BaseboardComponent
   ]
 })
 export class CoreModule {}
