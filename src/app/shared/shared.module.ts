@@ -12,7 +12,6 @@ import { CommonModule } from "@angular/common";
   ],
   imports: [
     CommonModule,
-    NgxMaskModule.forChild()],
-  exports: [TimeLineComponent, ControlErroComponent]
+    NgxMaskModule.forChild()]
 })
 export class SharedModule {}
